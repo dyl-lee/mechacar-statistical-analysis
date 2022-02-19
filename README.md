@@ -11,7 +11,7 @@ Various design specifications were used to manufacture 50 prototype cars in an e
 > * H<sub>a</sub>: at least one of these vehicle metrics accounts for non-random variance observed in the MPG results. 
 > * Significance level (alpha = 0.05) was established before multiple regression was performed on the dataset.
 
-["mpg_summary"](images/linear_regression_mpg.png)
+!["mpg_summary"](images/linear_regression_mpg.png)
 
 Both vehicle length and ground clearance metrics (p<0.001) significantly contribute to fuel efficiency. 
 
