@@ -13,6 +13,4 @@ Various design specifications were used to manufacture 50 prototype cars in an e
 
 ![mpg_summary](/Images/linear_regression_mpg.png)
 
-Both vehicle length and ground clearance metrics (p<0.001) significantly contribute to fuel efficiency. 
-
-The appropriate considerations were made to assess whether the slope of the model is considered to be zero
+The regression model slope is considered to be non-zero (F-statistic p<0.05, therefore reject the H<sub>0</sub>) and accounts for variance, fitting the data fairly well (multiple R-squared = 0.71). Both vehicle length and ground clearance metrics (p<0.001, therefore reject the H<sub>0</sub>) are statistically significant predictors of fuel efficiency compared to other metrics.
