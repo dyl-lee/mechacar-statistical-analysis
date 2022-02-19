@@ -22,7 +22,16 @@ total_summary <- sc_df %>% summarize(Mean=mean(PSI), Median=median(PSI), Varianc
 lot_summary <- sc_df %>% group_by(Manufacturing_Lot,) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance = var(PSI), SD=sd(PSI), .groups="keep")
 
 
-# T-test on Suspension coils
+# T-test on Suspension coils across all manufacturing lots
+t.test(x=sc_df$PSI, mu=1500)
 
+# T-tests to determine if PSI for each lot is statistically different from population mean
+lot1 <- subset(sc_df, Manufacturing_Lot == "Lot1")
+lot2 <- subset(sc_df, Manufacturing_Lot == "Lot2")
+lot3 <- subset(sc_df, Manufacturing_Lot == "Lot3")
+
+t.test(x=lot1$PSI, mu=1500)
+t.test(x=lot2$PSI, mu=1500)
+t.test(x=lot3$PSI, mu=1500)
 
 # MechaCar prototype comparison to competition 

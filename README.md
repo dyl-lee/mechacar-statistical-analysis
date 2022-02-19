@@ -13,4 +13,11 @@ Various design specifications were used to manufacture 50 prototype cars in an e
 
 ![mpg_summary](/Images/linear_regression_mpg.png)
 
-The regression model slope is considered to be non-zero (F-statistic p<0.05, therefore reject the H<sub>0</sub>) and accounts for variance, fitting the data fairly well (multiple R-squared = 0.71). Both vehicle length and ground clearance metrics (p<0.001, therefore reject the H<sub>0</sub>) are statistically significant predictors of fuel efficiency compared to other metrics.
+The regression model slope is considered to be non-zero (F-statistic p<0.05, therefore the H<sub>0</sub> that the overall model slope is 0 can be rejected). The model fits the data fairly well, accounting for 71% of the variability in the observed data (multiple R-squared = 0.71). Both vehicle length and ground clearance metrics (p<0.001, therefore reject the H<sub>0</sub>) are statistically significant predictors of fuel efficiency compared to other metrics.
+
+### Summary Statistics on Suspension Coils
+
+
+### T-Tests on Suspension Coils
+
+## Study Design: MechaCar prototypes vs the Competition
