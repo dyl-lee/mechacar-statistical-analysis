@@ -16,7 +16,11 @@ Various design specifications were used to manufacture 50 prototype cars in an e
 The regression model slope is considered to be non-zero (F-statistic p<0.05, therefore the H<sub>0</sub> that the overall model slope is 0 can be rejected). The model fits the data fairly well, accounting for 71% of the variability in the observed data (multiple R-squared = 0.71). Both vehicle length and ground clearance metrics (p<0.001, therefore reject the H<sub>0</sub>) are statistically significant predictors of fuel efficiency compared to other metrics.
 
 ### Summary Statistics on Suspension Coils
-Design specifications for the suspension coils of these cars dictate variance must not exceed 100 psi. While this constraint may be met when considering the total manufactured cars, the summary statistics  indicates that the variance for lot 3 exceeded the 100 psi maximum.  
+Design specifications for suspension coils dictate variance must not exceed 100 psi to pass lot testing. 
+
+The mean (1498.78 psi) and median (1500 psi) PSI for total manufactured suspension coils is very similar, indicating a symmetric distribution where the standard deviation is 7.89 psi and variance is 62.3 psi. 
+
+While the variance constraint may be met for the total manufactured coils, the summary statistics for each lot indicates that the variance for lot 3 has exceeded the 100 psi maximum. Lots 1 and 2 remain within the tolerated psi max. 
 <div id="image-table">
     <table>
         <tr>
@@ -25,15 +29,42 @@ Design specifications for the suspension coils of these cars dictate variance mu
         </tr>
 	    <tr>
     	    <td style="padding:10px">
-        	    <img src="Images/summary_stats_total.png" height="150"/>
+        	    <img src="Images/summary_stats_total.png", width=200/>
       	    </td>
             <td style="padding:10px">
-            	<img src="Images/summary_stats_lots.png" height="150"/>
+            	<img src="Images/summary_stats_lots.png", width=200/>
             </td>
         </tr>
     </table>
 </div>
+These summaries are also visualized by boxplots where the outliers are easily identified.
+
+![boxplot](/Images/boxplot.png) 
+
 ### T-Tests on Suspension Coils
+T-tests were performed to determine if all manufacturing lots and each individual lot are statistically different from the population mean of 1,500 psi.
+
+<div id="image-table">
+    <table>
+        <tr>
+            <td>T Test Results for Lot 1</td>
+            <td>T Test Results for Lot 1</td>
+            <td>T Test Results for Lot 3</td>
+        </tr>
+	    <tr>
+    	    <td style="padding:10px">
+        	    <img src="Images/t_test_lot1.png"/>
+      	    </td>
+            <td style="padding:10px">
+        	    <img src="Images/t_test_lot2.png"/>
+      	    </td>
+            <td style="padding:10px">
+        	    <img src="Images/t_test_lot3.png"/>
+      	    </td>
+        </tr>
+    </table>
+</div>
+
 
 
 ## Study Design: MechaCar prototypes vs the Competition
