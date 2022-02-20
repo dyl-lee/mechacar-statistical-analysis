@@ -21,6 +21,8 @@ sc_df <- read.csv(file="Suspension_Coil.csv", stringsAsFactors = F, check.names 
 total_summary <- sc_df %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance = var(PSI), SD=sd(PSI))
 lot_summary <- sc_df %>% group_by(Manufacturing_Lot,) %>% summarize(Mean=mean(PSI), Median=median(PSI), Variance = var(PSI), SD=sd(PSI), .groups="keep")
 
+#box plot
+boxplot(PSI~sc_df$Manufacturing_Lot, data=sc_df, main="Suspension Coil Weight Capacity", xlab="Manufacturing Lot")
 
 # T-test on Suspension coils across all manufacturing lots
 t.test(x=sc_df$PSI, mu=1500)
