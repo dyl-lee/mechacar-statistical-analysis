@@ -82,4 +82,5 @@ With the results of the T test, the following decisions can be made:
 In a future study, the performance of the MechaCar will be compared against vehicles from other manufacturers (at least n=3) to determine if there is a difference in their fuel efficiencies (mpg). As there is one categorical independent variable and one quantitative dependent variable (measured by mpg) with multiple groups to be compared, a one-way ANOVA should be performed in R using aov() and summary() functions. A significance level of 0.05 is sufficient to test the hypotheses using the resulting p-values:
 > * H<sub>0</sub>: The MechaCar performs as well as competitor vehicles in fuel efficiency
 > * H<sub>a</sub>: At least one manufacturer's vehicle differs significantly from the overall mean
+
 If the ANOVA results indicate that there is significant differences among the considered vehicles, performing a TukeyHSD (in R, TukeyHSD() function) post-hoc test can reveal which groups are statiscally different from one another.
