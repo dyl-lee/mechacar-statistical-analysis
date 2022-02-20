@@ -75,7 +75,10 @@ T-tests were performed to determine if all manufacturing lots and each individua
 </div>
 
 With the results of the T test, the following decisions can be made:
-* Total 
+* Total Manufactured Suspension Coils failed to reject the null hypothesis (p-value = 0.06), there is no difference between the sample mean and the population mean of 1500 psi.
+* Suspension coils from Lot 1 failed to reject the null hypothesis (p-value = 1), there is no difference between the sample mean and the population mean of 1500 psi.
+* Suspension coils from Lot 2 failed to reject the null hypothesis (p-value = 0.61), there is no difference between the sample mean and the population mean of 1500 psi.
+* Suspension coils from Lot 3 rejected the null hypothesis (p-value = 0.04), there is a statistical difference between the sample mean and the population mean of 1500 psi.
 
 ## Study Design: MechaCar prototypes vs the Competition
 In a future study, the performance of the MechaCar will be compared against vehicles from other manufacturers (at least n=3) to determine if there is a difference in their fuel efficiencies (mpg). As there is one categorical independent variable and one quantitative dependent variable (measured by mpg) with multiple groups to be compared, a one-way ANOVA should be performed in R using aov() and summary() functions. A significance level of 0.05 is sufficient to test the hypotheses using the resulting p-values:
