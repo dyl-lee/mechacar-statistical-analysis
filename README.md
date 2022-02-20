@@ -36,9 +36,10 @@ While the variance constraint may be met for the total manufactured coils, the s
         </tr>
     </table>
 </div>
+
 These summaries are also visualized by boxplots where the outliers are easily identified.
 
-![boxplot](/Images/boxplot.png) 
+> ![boxplot](/Images/boxplot.png) 
 
 ### T-Tests on Suspension Coils
 T-tests were performed to determine if all manufacturing lots and each individual lot are statistically different from the population mean of 1,500 psi. The null hypothesis for each of the tests are similar, H<sub>0</sub>: There is no difference between the total mean/lot means and the population mean of 1500 psi. Similarly, the H<sub>a</sub> states that there is a statistical difference between the total mean/lot means. The significance level (alpha = 0.05) was established prior to testing.
