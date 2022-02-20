@@ -34,4 +34,3 @@ t.test(x=lot1$PSI, mu=1500)
 t.test(x=lot2$PSI, mu=1500)
 t.test(x=lot3$PSI, mu=1500)
 
-# MechaCar prototype comparison to competition 
