@@ -1,6 +1,7 @@
 # mechacar-statistical-analysis
 
 ## Overview
+An analysis of production data for a car manufacturer.  
 
 ## Results
 
@@ -29,10 +30,10 @@ While the variance constraint may be met for the total manufactured coils, the s
         </tr>
 	    <tr>
     	    <td style="padding:10px">
-        	    <img src="Images/summary_stats_total.png", width=200/>
+        	    <img src="Images/summary_stats_total.png", width=500/>
       	    </td>
             <td style="padding:10px">
-            	<img src="Images/summary_stats_lots.png", width=200/>
+            	<img src="Images/summary_stats_lots.png", width=500/>
             </td>
         </tr>
     </table>
@@ -42,33 +43,42 @@ These summaries are also visualized by boxplots where the outliers are easily id
 ![boxplot](/Images/boxplot.png) 
 
 ### T-Tests on Suspension Coils
-T-tests were performed to determine if all manufacturing lots and each individual lot are statistically different from the population mean of 1,500 psi.
+T-tests were performed to determine if all manufacturing lots and each individual lot are statistically different from the population mean of 1,500 psi. The null hypothesis for each of the tests are similar, H<sub>0</sub>: There is no difference between the total mean/lot means and the population mean of 1500 psi. Similarly, the H<sub>a</sub> states that there is a statistical difference between the total mean/lot means. The significance level (alpha = 0.05) was established prior to testing.
 
 <div id="image-table">
     <table>
         <tr>
+	    <td>T Test Results for All Lots</td>
+	</tr>
+	<tr>
+	    <td style="padding:10px">
+		    <img src="Images/t_test_all_lots.png"/>
+	    </td>
+	</tr>
+    	<tr>
             <td>T Test Results for Lot 1</td>
-            <td>T Test Results for Lot 1</td>
+            <td>T Test Results for Lot 2</td>
             <td>T Test Results for Lot 3</td>
         </tr>
 	    <tr>
     	    <td style="padding:10px">
-        	    <img src="Images/t_test_lot1.png"/>
+        	    <img src="Images/t_test_lot1.png", width=400/>
       	    </td>
             <td style="padding:10px">
-        	    <img src="Images/t_test_lot2.png"/>
+        	    <img src="Images/t_test_lot2.png", width=400/>
       	    </td>
             <td style="padding:10px">
-        	    <img src="Images/t_test_lot3.png"/>
+        	    <img src="Images/t_test_lot3.png", width=400/>
       	    </td>
         </tr>
     </table>
 </div>
 
-
+With the results of the T test, the following decisions can be made:
+* Total 
 
 ## Study Design: MechaCar prototypes vs the Competition
-In a future study, the performance of the MechaCar will be compared against vehicles from other manufacturers (at least n=3) to determine if there is a difference in their fuel efficiencies (mpg). As there is one categorical independent variable and one quantitative dependent variable (measured by mpg) with multiple groups to be compared, a one-way ANOVA should be performed in R using aov() and summary() functions. A significance level of 0.05 should be sufficient to test the hypotheses using the resulting p-values:
+In a future study, the performance of the MechaCar will be compared against vehicles from other manufacturers (at least n=3) to determine if there is a difference in their fuel efficiencies (mpg). As there is one categorical independent variable and one quantitative dependent variable (measured by mpg) with multiple groups to be compared, a one-way ANOVA should be performed in R using aov() and summary() functions. A significance level of 0.05 is sufficient to test the hypotheses using the resulting p-values:
 > H<sub>0</sub>: The MechaCar performs as well as competitor vehicles in fuel efficiency
 > H<sub>a</sub>: At least one manufacturer's vehicle differs significantly from the overall mean
 If the ANOVA results indicate that there is significant differences among the considered vehicles, performing a TukeyHSD (in R, TukeyHSD() function) post-hoc test can reveal which groups are statiscally different from one another.
