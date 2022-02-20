@@ -1,7 +1,5 @@
-# mechacar-statistical-analysis
-
 ## Overview
-An analysis of production data for a car manufacturer.  
+A statistical analysis of production data for a car manufacturer.  
 
 ## Results
 
