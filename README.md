@@ -25,10 +25,10 @@ Design specifications for the suspension coils of these cars dictate variance mu
         </tr>
 	    <tr>
     	    <td style="padding:10px">
-        	    <img src="Images/summary_stats_total" height="150"/>
+        	    <img src="Images/summary_stats_total.png" height="150"/>
       	    </td>
             <td style="padding:10px">
-            	<img src="Images/summary_stats_lots" height="150"/>
+            	<img src="Images/summary_stats_lots.png" height="150"/>
             </td>
         </tr>
     </table>
