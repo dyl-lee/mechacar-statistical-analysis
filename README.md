@@ -16,8 +16,23 @@ Various design specifications were used to manufacture 50 prototype cars in an e
 The regression model slope is considered to be non-zero (F-statistic p<0.05, therefore the H<sub>0</sub> that the overall model slope is 0 can be rejected). The model fits the data fairly well, accounting for 71% of the variability in the observed data (multiple R-squared = 0.71). Both vehicle length and ground clearance metrics (p<0.001, therefore reject the H<sub>0</sub>) are statistically significant predictors of fuel efficiency compared to other metrics.
 
 ### Summary Statistics on Suspension Coils
-
-
+Design specifications for the suspension coils of these cars dictate variance must not exceed 100 psi. While this constraint may be met when considering the total manufactured cars, the summary statistics  indicates that the variance for lot 3 exceeded the 100 psi maximum.  
+<div id="image-table">
+    <table>
+        <tr>
+            <td>Summary Statistics (Total)</td>
+            <td>Summary Statistics (per lot)</td>
+        </tr>
+	    <tr>
+    	    <td style="padding:10px">
+        	    <img src="Images/summary_stats_total" height="150"/>
+      	    </td>
+            <td style="padding:10px">
+            	<img src="Images/summary_stats_lots" height="150"/>
+            </td>
+        </tr>
+    </table>
+</div>
 ### T-Tests on Suspension Coils
 
 
